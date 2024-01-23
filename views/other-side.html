@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+
+
+{% block title %}
+Other side of the Bridge
+{% endblock %}
+{% block body %}
+
+<div>
+    <h2>Welcome {{ user  }}</h2>
+    <p>
+        Congratulations on crossing the bridge of Death!
+    </p>
+    <p>We hav complimentary {{ color }} M&M's for you to refuel on you rquest to {{ quest }}</p>
+    <ul>
+        {% for num in nums %}
+        <li>{{ num }}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+{% endblock %}
